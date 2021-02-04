@@ -1,9 +1,4 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[298]:
-
-
+#Dependencies
 import simplejson as json
 import pandas as pd 
 from pandas.io.json import json_normalize
