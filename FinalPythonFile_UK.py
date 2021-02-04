@@ -321,9 +321,6 @@ def modeling_n_prediction(df, device, position):
     return list([casted_df, casted_pred_df])
 
 
-# In[308]:
-
-
 results_mobile = modeling_n_prediction(df, 'MOBILE', 10)
 results_desktop = modeling_n_prediction(df, 'DESKTOP', 10)
 
