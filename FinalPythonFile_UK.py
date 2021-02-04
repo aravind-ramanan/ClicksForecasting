@@ -10,6 +10,7 @@ from pandas.io.json import json_normalize
 import numpy as np
 import fbprophet
 import subprocess
+import string 
 
 # Read the dataset
 with open('/var/www/html/google_data_uk.json', encoding='utf-8') as fh:
@@ -67,10 +68,7 @@ df['keyword_cleaned'] = df['keyword'].apply(lambda x: ' '.join([word for word in
 df.head(5)
 
 
-# In[304]:
 
-
-import string 
 exclude = set(string.punctuation)
 def removePunctuationFix(x):
     try: 
